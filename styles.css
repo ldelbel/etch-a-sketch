@@ -1,12 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-body, html {
+
+body {
   display: flex;
   align-items: center;
-  height: 100%;
-  width: 100%;
   background-color: linear-gradient(to bottom, #dc2430, #7b4397);
-  position: absolute;
-
 }
 
 .content {
@@ -23,8 +25,8 @@ body, html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  width: 580px;
-  height: 580px;
+  width: 50vw;
+  height: 50vw;
   grid-gap: 1px;  
   margin: 10px;
   margin-top: 17px;
@@ -40,14 +42,13 @@ background-color: white;
 .sidepanel {
   display: grid;
   grid-template-columns: 1;
-  width: 300px;
+  width: 23%;
   padding: 20px;
   background: #100E17; /* #100E17 */
-  height: 100%;
+  height: 100vh;
   box-shadow: -4px 2px 6px black;
   position: absolute;
   right: 0;
-
 }
 
 button {
@@ -117,16 +118,15 @@ button {
 
 .option {
   display: flex;
-  justify-content:  center;
-  padding-top: 50px;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .switch {
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 100px;
   height: 40px;
-  
 }
 
 /* Hide default HTML checkbox */
